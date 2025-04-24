@@ -1,0 +1,128 @@
+:root {
+  --bg-light: #f9f9f9;
+  --text-light: #222;
+  --card-light: #fff;
+
+  --bg-dark: #121212;
+  --text-dark: #eee;
+  --card-dark: #1e1e1e;
+
+  --primary: #4dabf7;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.light-mode {
+  background: var(--bg-light);
+  color: var(--text-light);
+}
+
+body.dark-mode {
+  background: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+header {
+  padding: 2rem;
+  text-align: center;
+  background: var(--primary);
+  color: white;
+  position: relative;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0 0;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+main {
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.projetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+body.light-mode .card {
+  background: var(--card-light);
+}
+
+body.dark-mode .card {
+  background: var(--card-dark);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card a {
+  color: var(--primary);
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  padding-bottom: 2rem;
+}
+
+.social {
+  margin-top: 1rem;
+}
+
+.social a {
+  margin: 0 0.5rem;
+  color: inherit;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social a:hover {
+  color: var(--primary);
+}

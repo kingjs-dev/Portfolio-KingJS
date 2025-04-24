@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KingJS | Portfólio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body>
+  <header data-aos="fade-down">
+    <h1>KingJS</h1>
+    <p>Desenvolvedor de Aplicações Web</p>
+    <button id="toggle-theme" aria-label="Alternar tema">
+      <i class="fa-solid fa-circle-half-stroke"></i>
+    </button>
+  </header>  <main>
+    <section data-aos="fade-up">
+      <h2>Sobre</h2>
+      <p>Sou um desenvolvedor web apaixonado por criar aplicações úteis, bonitas e responsivas. Uso tecnologias modernas e foco na experiência do usuário.</p>
+    </section><section data-aos="fade-up" data-aos-delay="100">
+  <h2>Projetos</h2>
+  <div class="projetos">
+    <div class="card">
+      <h3>FoodGO</h3>
+      <p>Este site foi desenvolvido por mim com o objetivo de ser uma plataforma simples para a venda de lanches. No entanto, o projeto foi descontinuado por motivos pessoais do proprietário.</p>
+      <a href="#">Ver projeto</a> |
+      <a href="https://github.com/kingjs-dev/FoodGO-project" target="_blank">Código no GitHub</a>
+    </div>
+    <div class="card">
+      <h3>Kich_Foods</h3>
+      <p>Mais um site de comidas, um pouco mais avançado, também desenvolvido por mim. Infelizmente, o projeto foi descontinuado, mas confira o visual do projeto abaixo.</p>
+      <a href="#">Ver projeto</a> |
+      <a href="https://github.com/kingjs-dev/Kich_Food-project" target="_blank">Código no GitHub</a>
+    </div>
+  </div>
+</section>
+
+<section data-aos="fade-up" data-aos-delay="200">
+  <h2>Contato</h2>
+  <p>Email: kingjsdev@gmail.com</p>
+  <p>Freelancer: <a href="#">Perfil Freelancer</a></p>
+</section>
+
+  </main>  <footer>
+    <p>&copy; 2025 KingJS</p>
+  </footer>  <script>
+    AOS.init();
+
+    const toggleBtn = document.getElementById("toggle-theme");
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+    });
+  </script></body>
+</html>
